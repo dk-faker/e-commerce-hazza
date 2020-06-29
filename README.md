@@ -1,5 +1,7 @@
 # Hazza_MVVM (Clean_Architecture)
 
+Este repositorio contiene una aplicación simple para acceder a la API de categorías Hazza y mostrar una lista de categorías de diversos productos, que muestra detalles cuando se tocan los elementos de la lista (una aplicación maestra / detalle típica) que implementa la arquitectura MVVM utilizando Dagger2, Retrofit, RxJava2, LiveData, RoomDatabase, Enlace de datos y Componente de navegación.
+
 ## La aplicación tiene los siguientes paquetes:
 1. **data**: Contiene todos los componentes de acceso y manipulación de datos.
 2. **di**: Dependencia que proporciona clases usando Dagger2.
@@ -8,7 +10,7 @@
 
 ## Navigation Component Graph
 <p align="center">
-    <img src="nav_graph.png"/>
+    <img src="nav_graph.PNG"/>
 </p>
 <br>
 
