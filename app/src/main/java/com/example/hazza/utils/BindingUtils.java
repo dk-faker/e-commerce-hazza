@@ -34,8 +34,7 @@ public final class BindingUtils {
     public static void setImageUrl(ImageView imageView, String url) {
         Glide.with(imageView.getContext())
                 .load(url)
-                //.apply(RequestOptions.bitmapTransform(new RoundedCorners(14)))
-                .placeholder(R.drawable.girla)
+                .placeholder(R.drawable.notimage).centerCrop()
                 .into(imageView);
     }
 
