@@ -9,8 +9,6 @@ public class CategoriaDataItem implements Parcelable {
     private String nombre;
     private String foto;
 
-
-
     public int getIdCategoria() {
         return idCategoria;
     }

@@ -10,6 +10,9 @@ import android.graphics.drawable.ColorDrawable;
 import android.provider.Settings;
 import android.util.Patterns;
 
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+
 import com.example.hazza.R;
 
 import java.io.IOException;
@@ -17,12 +20,17 @@ import java.io.InputStream;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Locale;
+import java.util.Timer;
+import java.util.TimerTask;
 
 public final class CommonUtils {
 
     private CommonUtils() {
         // This utility class is not publicly instantiable
     }
+    public static int position;
+    public static Timer timer;
+    public static  TimerTask timerTask;
 
     @SuppressLint("all")
     public static String getDeviceId(Context context) {
@@ -61,4 +69,6 @@ public final class CommonUtils {
         progressDialog.setCanceledOnTouchOutside(false);
         return progressDialog;
     }
+
+
 }

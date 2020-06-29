@@ -28,8 +28,6 @@ public final class BindingUtils {
         }
     }
 
-
-
     @BindingAdapter("imageUrl")
     public static void setImageUrl(ImageView imageView, String url) {
         Glide.with(imageView.getContext())

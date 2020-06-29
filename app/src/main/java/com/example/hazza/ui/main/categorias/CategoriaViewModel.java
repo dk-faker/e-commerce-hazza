@@ -1,15 +1,25 @@
 package com.example.hazza.ui.main.categorias;
 
 import android.app.Application;
+import android.content.Context;
 
+import androidx.annotation.NonNull;
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.LinearSnapHelper;
+import androidx.recyclerview.widget.RecyclerView;
+import androidx.recyclerview.widget.SnapHelper;
+
 import com.example.hazza.data.AppDataManager;
 import com.example.hazza.data.model.api.CategoriaResponse;
 import com.example.hazza.ui.base.BaseViewModel;
+import com.example.hazza.utils.CommonUtils;
 import com.example.hazza.utils.rx.SchedulerProvider;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Timer;
+import java.util.TimerTask;
 
 public class CategoriaViewModel extends BaseViewModel<CategoriaNavigator> {
 
@@ -50,8 +60,10 @@ public class CategoriaViewModel extends BaseViewModel<CategoriaNavigator> {
         }
         categoriaLiveData.setValue(categoriaDataItems);
     }
+
     public LiveData<List<CategoriaDataItem>> getCategoriaLiveDataLiveData() {
         return categoriaLiveData;
     }
+
 
 }

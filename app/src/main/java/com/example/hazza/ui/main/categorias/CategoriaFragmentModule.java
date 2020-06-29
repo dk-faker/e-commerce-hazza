@@ -12,4 +12,5 @@ public class CategoriaFragmentModule {
     CategoariaAdapter provideCategoriaAdapter() {
         return new CategoariaAdapter(new ArrayList<>());
     }
+
 }
