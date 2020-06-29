@@ -8,7 +8,7 @@
 
 ## Navigation Component Graph
 <p align="center">
-    <img src="nav_graph.png"/>
+    <img src="nav_graph.PNG"/>
 </p>
 <br>
 
