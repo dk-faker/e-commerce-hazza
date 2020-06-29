@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#212121</color>
+    <color name="colorPrimaryDark">@color/black</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="red">#D62E2E</color>
+    <color name="ghost_white">#F9F9FB</color>
+    <color name="color_texmenutop">#989898</color>
+    <color name="textColor">#060606</color>
+    <color name="search_bg">#ffd7ecec</color>
+    <color name="pin_select_bgcolor">#ff3ccfcf</color>
+    <color name="fashion_txt_color">#ff083030</color>
+    <!--Design colors-->
+    <color name="light_gray">#dbdbdb</color>
+    <color name="gray">#7e7e7e</color>
+    <color name="semi_gray">#979797</color>
+    <color name="dark_gray">#696969</color>
+    <color name="bg_color">#f7f7f7</color>
+    <color name="black">#000000</color>
+    <color name="white">#ffffff</color>
+    <color name="black_effective">#2a2a2a</color>
+    <color name="shadow">#d0d8dc</color>
+    <color name="light_green">#78DC96</color>
+    <color name="light_blue">#55C8F0</color>
+
+    <color name="blue_black_dark">#13171d</color>
+    <color name="blue_black_light">#ff20386d</color>
+    <color name="blue_grey_light">#A5B4C8</color>
+    <color name="orange">#FFA500</color>
+    <color name="yellow">#fff44f</color>
+    <color name="blue">#ff1e376d</color>
+    <color name="blue.dark">#ff20386d</color>
+    <color name="bluecito">#031336</color>
+    <color name="green">#54970A</color>
+    <color name="greenitem">#7ACF1E</color>
+    <color name="white.smoke">#fff5f5f5</color>
+    <color name="whitefragment">#f3f3f3</color>
+    <color name="whitecard">#FCFAFA</color>
+    <color name="contentBadgeTitle">#a9a9a9</color>
+    <color name="contentDividerLine">#e0e0e0</color>
+    <color name="indigo">#fffd6363</color>
+    <color name="indigo_gradient_end">#ff293993</color>
+
+    <color name="bg_ripple">#66aeaeae</color>
+</resources>

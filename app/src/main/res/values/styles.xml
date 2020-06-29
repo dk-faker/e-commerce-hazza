@@ -1,0 +1,17 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/white</item>
+        <item name="colorPrimaryDark">@color/colorPrimary</item>
+        <item name="colorAccent">@color/blue.dark</item>
+    </style>
+
+    <style name="AppTheme.toolbar">
+        <item name="colorControlNormal">@color/white</item>
+    </style>
+    <style name="ContentLoadingProgress">
+        <item name="colorAccent">@color/red</item>
+    </style>
+</resources>

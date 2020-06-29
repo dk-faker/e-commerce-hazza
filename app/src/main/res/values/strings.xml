@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Hazza</string>
+
+    <string name="invalid_email_password">El usuario o la contraseña son incorrectos.</string>
+
+    <string name="empty_screen">No estás conectado. Comprueba la conexión.</string>
+    <string name="please_retry">Conéctate a Internet</string>
+    <string name="retry">REINTENTAR</string>
+    <string name="favorites">Favorites</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="back_to_home">Back to home</string>
+
+    <string name="DniHint">Número de Documento</string>
+    <string name="hintPassword">Contraseña</string>
+    <string name="loginOlvidar">¿Olvidaste tu contraseña</string>
+    <string name="logincrearcuenta">Crear una cuenta nueva</string>
+    <string name="logout">Cerrar Sesión</string>
+    <string name="enfermedad">Anamnesis</string>
+
+</resources>
