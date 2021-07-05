@@ -3,4 +3,5 @@
   xmlns:android="http://schemas.android.com/apk/res/android">
     <solid android:color="@color/ghost_white" />
     <corners android:radius="5.0dip" />
+
 </shape>

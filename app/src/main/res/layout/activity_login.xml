@@ -21,18 +21,9 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#212121">
+        android:background="@color/white.smoke">
 
 
-        <ImageView
-            android:id="@+id/imageView2"
-            android:layout_width="213dp"
-            android:layout_height="153dp"
-            android:scaleType="centerCrop"
-            app:srcCompat="@drawable/header"
-            tools:layout_editor_absoluteX="-17dp"
-            tools:layout_editor_absoluteY="-8dp"
-            tools:ignore="MissingConstraints" />
 
 
 
@@ -46,18 +37,17 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:layout_marginTop="100dp"
-                android:layout_marginRight="120dp"
-                android:layout_marginLeft="120dp">
-                <ImageView
-                    android:id="@+id/imageView7"
-                    android:layout_width="wrap_content"
+                android:layout_marginRight="80dp"
+                android:layout_marginLeft="80dp">
+                <com.airbnb.lottie.LottieAnimationView
+                    android:layout_width="match_parent"
+                    app:lottie_autoPlay="true"
+                    android:layout_marginTop="-20dp"
+                    app:lottie_fileName="gift.json"
+                    app:lottie_loop="true"
                     android:layout_height="wrap_content"
-                    android:layout_alignParentTop="true"
-                    android:layout_centerHorizontal="true"
+                    ></com.airbnb.lottie.LottieAnimationView>
 
-                    android:scaleType="fitCenter"
-                    app:srcCompat="@drawable/logo" />
             </LinearLayout>
 
 
@@ -69,9 +59,10 @@
             android:layout_height="wrap_content"
             android:layout_alignParentStart="true"
             android:layout_alignParentBottom="true"
-            android:layout_marginBottom="150dp"
+            android:layout_marginBottom="100dp"
             android:gravity="center_horizontal"
             android:orientation="vertical"
+            android:background="@color/white"
             android:layout_alignParentLeft="true">
 
             <TextView
@@ -89,6 +80,7 @@
                 android:layout_width="fill_parent"
                 android:layout_height="0.0dip"
                 android:layout_weight="0.6"
+
                 android:gravity="center_vertical"
                 tools:ignore="Suspicious0dp">
 
@@ -98,6 +90,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignTop="@+id/etEmail"
+                    android:fontFamily="@font/proxima_nova_bold"
                     android:layout_alignBottom="@+id/etEmail"
                     android:layout_marginLeft="40.0dip"
                     android:background="@drawable/shape_rectangle_green"
@@ -119,12 +112,13 @@
                     android:layout_toRightOf="@id/tvTypeDocument"
                     android:background="@drawable/shape_rectangle_white"
                     android:hint="@string/DniHint"
+                    android:fontFamily="@font/proxima_nova_bold"
                     android:paddingLeft="10.0dip"
                     android:paddingTop="10.0dip"
                     android:paddingRight="10.0dip"
                     android:paddingBottom="10.0dip"
                     android:textColor="@color/black"
-                    android:textColorHint="@color/black"
+                    android:textColorHint="@color/blue_grey_light"
                     android:textSize="16.0sp" />
 
                 <EditText
@@ -139,13 +133,14 @@
                     android:background="@drawable/shape_rectangle_white"
                     android:hint="@string/hintPassword"
                     android:inputType="numberPassword"
+                    android:fontFamily="@font/proxima_nova_bold"
                     android:maxLength="8"
                     android:paddingLeft="10.0dip"
                     android:paddingTop="10.0dip"
                     android:paddingRight="10.0dip"
                     android:paddingBottom="10.0dip"
                     android:textColor="@color/black"
-                    android:textColorHint="@color/black"
+                    android:textColorHint="@color/blue_grey_light"
                     android:textSize="16.0sp" />
 
                 <TextView
@@ -156,12 +151,14 @@
                     android:layout_alignLeft="@+id/etPassword"
                     android:layout_alignRight="@+id/etPassword"
                     android:layout_marginTop="20.0dip"
-                    android:text="INICIAR SESIÓN"
+                    android:text="Iniciar Sesión"
                     android:onClick="@{() -> viewModel.onServerLoginClick()}"
                     android:textColor="@color/ghost_white"
                     android:background="@drawable/btn_login"
                     android:gravity="center"
+                    android:fontFamily="@font/proxima_nova_bold"
                     android:paddingTop="12.0dip"
+                    android:elevation="8dp"
                     android:paddingBottom="12.0dip"
                     android:textAllCaps="false"
 
@@ -175,8 +172,9 @@
                     android:layout_centerHorizontal="true"
                     android:layout_marginTop="18.0dip"
                     android:text="@string/loginOlvidar"
+                    android:fontFamily="@font/sf_protext_regular"
                     android:textColor="@color/dark_gray"
-                    android:textSize="15.0sp" />
+                    android:textSize="13.0sp" />
 
                 <TextView
                     android:id="@+id/tvRegister"
@@ -194,21 +192,7 @@
 
         </LinearLayout>
 
-        <RelativeLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_alignParentRight="true"
-            android:layout_alignParentBottom="true"
-            android:layout_gravity="bottom|right">
-            <ImageView
-                android:id="@+id/imageView6"
-                android:layout_width="220dp"
-                android:layout_height="158dp"
-                android:rotationX="180"
-                android:rotationY="180"
-                app:srcCompat="@drawable/header" />
-        </RelativeLayout>
+
 
     </RelativeLayout>
         <androidx.core.widget.ContentLoadingProgressBar
